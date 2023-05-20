@@ -41,5 +41,5 @@ function destroyBoxes() {
   inputcontrols.removeAttribute('counter');
   inputcontrols.value = '';
 
-}
+} 
   
