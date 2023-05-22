@@ -5,20 +5,20 @@ formReg.addEventListener('submit', OnSubmit)
 function OnSubmit(event) {
     event.preventDefault();
 
-    const { email, password } = event.currentTarget.elements;
+    const { email, password } = event.target.elements;
             
-    if (email.value === "" || password.value === "") {
+    if (email.value === "" || password.value.trim() === "") {
         alert('Fill all fields!');
         return false
     }
    
     const userReg = {
         email: email.value,
-        password: password.value,
+        password: password.value.trim(),
     };
 
     console.log(userReg);
         
-    event.currentTarget.reset();
+    event.target.reset();
    
 }

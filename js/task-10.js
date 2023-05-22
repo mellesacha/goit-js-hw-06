@@ -13,8 +13,8 @@ const boxes = document.querySelector('#boxes');
 inputcontrols.addEventListener('input', OnInput);
 
 function OnInput(event) {
-  inputcontrols.setAttribute('counter', +event.currentTarget.value)
-  console.log(event.currentTarget.value)
+  inputcontrols.setAttribute('counter', +event.target.value)
+  console.log(event.target.value)
 };
 
 btnCreate.addEventListener('click', createBoxes);

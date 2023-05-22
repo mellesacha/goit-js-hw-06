@@ -7,14 +7,14 @@ let counterValue = 0;
 
 btnDecrease.addEventListener('click', onBtnDecreaseClick)
 
-function onBtnDecreaseClick(event) {
+function onBtnDecreaseClick() {
     counterValue -= 1;
     totalClick.textContent = `${counterValue}`
 }
 
 btnIncrease.addEventListener('click', onBtnIncreaseClick)
 
-function onBtnIncreaseClick(event) {
+function onBtnIncreaseClick() {
     counterValue += 1;
     totalClick.textContent = `${counterValue}`
 }
